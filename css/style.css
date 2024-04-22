@@ -107,7 +107,7 @@ START */
   text-align: center;
 }
 
-.popup {
+.popup-carrer {
   display: none;
   position: fixed;
   left: 50%;
@@ -123,11 +123,11 @@ START */
   padding-left: 20px;
   border-radius: 20px;
 }
-.popup h1 {
+.popup-carrer h1 {
   font-size: 20px;
   color: #08043c !important;
 }
-.popup p {
+.popup-carrer p {
   font-size: 15px;
 }
 
