@@ -1,0 +1,276 @@
+/* Carrer Page Styles */
+/* Carrer Page Styles */
+.container-karir {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+.header-section {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.header-title {
+  font-size: 24px;
+  color: #252961;
+}
+
+.header-image {
+  width: 100%;
+  max-height: 800px;
+  overflow: hidden;
+  border-radius: 6px;
+}
+
+.header-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.job-category {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.job-box {
+  width: calc(33.33% - 20px);
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.job-box img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.job-box h3 {
+  margin-bottom: 10px;
+  color: #252961;
+  font-size: 20px;
+}
+
+/* Bagian Revisi 
+START */
+
+.professional-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin-top: 20px;
+}
+
+.professional-detail {
+  width: 250px;
+  height: 120px;
+  background-color: #f1f1f1;
+  border-radius: 10px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 5);
+  overflow: hidden;
+  transition: transform 0.6s ease;
+  position: relative;
+}
+.professional-content h1 {
+  font-size: 20px;
+  margin-bottom: 55px;
+  color: #08043c;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.professional-button {
+  position: absolute;
+  /* Position the button absolutely */
+  bottom: 10px;
+  /* Adjust this value to set the distance from the bottom */
+  left: 50%;
+  /* Align the button to the center horizontally */
+  transform: translateX(-50%);
+  /* Center the button horizontally */
+  display: inline-block;
+  background-color: #08043c;
+  width: auto;
+  /* Set width to auto to fit content */
+  color: #fff;
+  text-decoration: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffff;
+  border: 2px solid #08043c;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 9999;
+  text-align: center;
+  width: 70%; /* Adjust this value as needed */
+  text-align: left;
+  padding-left: 20px;
+  border-radius: 20px;
+}
+.popup h1 {
+  font-size: 20px;
+  color: #08043c !important;
+}
+.popup p {
+  font-size: 15px;
+}
+
+.popup-detail-list {
+  display: block;
+  padding: 0;
+  list-style-type: none;
+  text-align: left;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.popup-detail-list li {
+  font-size: 12px;
+}
+
+.close {
+  color: #8e918f;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 35px;
+  font-weight: bold;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.close:hover,
+.close:focus {
+  color: #08043c;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Bagian Revisi 
+END */
+
+/* Styles for Pop-up */
+.popup-karir {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-content-karir {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 100%;
+  width: 100%;
+  overflow-y: auto; /* Menambahkan scrolling jika konten terlalu panjang */
+  z-index: 1000;
+}
+
+.popup-content-karir h2 {
+  font-size: 21px;
+  color: #252a61;
+  margin-bottom: 10px;
+}
+
+.popup-content-karir p {
+  font-size: 16px;
+  color: #555;
+}
+
+.popup-content-karir ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+@media screen and (max-width: 767px) {
+  .popup {
+    width: 100%;
+
+    font-size: 4px; /* Adjust this value as needed */
+  }
+}
+
+.form-container-karir {
+  margin-top: 20px;
+  max-width: 600px; /* Ubah lebar sesuai keinginan Anda */
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-container-karir {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+h2.karir-title {
+  grid-column: span 2;
+  color: #252961;
+  text-align: center;
+  font-size: 25px;
+}
+
+form.karir-form {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+}
+
+label.karir-label {
+  font-size: 16px;
+  color: #333;
+}
+
+input.karir-input,
+select.karir-select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Styling for select element */
+select.karir-select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Additional styling as needed */
+
+/* Responsive Styles for Mobile */
+@media (max-width: 767px) {
+  .job-box {
+    width: 100%;
+  }
+
+  .form-container-karir {
+    grid-template-columns: 1fr;
+  }
+}
